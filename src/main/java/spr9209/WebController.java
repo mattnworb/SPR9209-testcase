@@ -47,7 +47,7 @@ public class WebController {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public void iaeHandler(HttpServletResponse response) {
         try {
-            response.getWriter().println("Handling NullPointerException");
+            response.getWriter().println("Handling IllegalArgumentException");
         } catch (IOException e) {
             //ignore
         }
